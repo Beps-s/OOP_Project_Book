@@ -7,12 +7,12 @@ class UI {
       <td>${titleVal}</td>
       <td>${authorVal}</td>
       <td>${isbnVal}</td>
-      <td><a href="#" class="btn delete">X</a></td>`;
+      <td><a href="#" class="btn">X</a></td>`;
     list.appendChild(row);
   }
 
   deleteBook(el){
-        if(el.classList.contains('delete')){
+        if(el.textContent == "X"){
             el.parentElement.parentElement.remove();
         }
     }
